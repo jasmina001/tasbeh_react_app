@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Tasbeh from './tasbeh'; // src ichida joylashgan bo'lishi kerak
+import Tasbeh from './tasbeh'; 
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <Router>
       <div className="flex min-h-screen bg-gray-100">
-        {/* Sidebar */}
+      
         <div
           className={`fixed top-0 left-0 h-full w-64 bg-white shadow-lg p-4 transform transition-transform duration-300 z-50
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}
@@ -28,7 +28,6 @@ const App = () => {
           </button>
         </div>
 
-        {/* Main content */}
         <main className="flex-1 p-6 ml-0 sm:ml-0">
           <div className="flex justify-between items-center mb-6">
             <button
@@ -56,7 +55,7 @@ const App = () => {
                   </div>
                   <div className="bg-white p-4 rounded-xl shadow-md">
                     <h3 className="text-xl font-semibold text-gray-700">Foydalanuvchilar</h3>
-                    <p className="text-2xl font-bold text-green-600 mt-2">245</p>
+                    <p className="text-2xl font-bold text-green-600 mt-2"> 2 245</p>
                   </div>
                   <div className="bg-white p-4 rounded-xl shadow-md">
                     <h3 className="text-xl font-semibold text-gray-700">Online</h3>
@@ -73,8 +72,12 @@ const App = () => {
         {isModalOpen && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white rounded-xl p-6 w-96 shadow-xl animate-scaleIn">
-              <h2 className="text-2xl font-bold mb-4 text-blue-600">Yordam oynasi</h2>
-              <p className="text-gray-600 mb-4">Bu yerda siz tasbeh zikr qilishingiz mumkin</p>
+              <h2 className="text-2xl font-bold mb-4 text-blue-600">Yordam oynasi 🔍</h2>
+              <p className="text-gray-600 mb-4">Bu yerda siz tasbeh zikr qilishingiz mumkin📿 
+              1.SubhanAllah📿 <br></br>
+              2.Alhamdulillah📿 <br></br>
+              3.Allohu Akbar📿...
+              </p>
               <button
                 className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600"
                 onClick={() => setIsModalOpen(false)}
