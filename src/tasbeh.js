@@ -13,7 +13,9 @@ const Tasbeh = () => {
       <button onClick={handleClick} className="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 m-2">
         zikr
       </button>
-    
+      <button onClick={reset} className="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600 m-2">
+        boshidan
+      </button>
     </div>
   );
 };
